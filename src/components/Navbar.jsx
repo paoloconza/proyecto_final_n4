@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserTie } from '@fortawesome/free-solid-svg-icons'
 
-export default function Navbar({ user }) {
+export default function Navbar() {
     return (
         <nav className="flex justify-between items-center p-5">
             <img src="../src/assets/devchallenges.svg" alt="logo" className="w-[150px]" />

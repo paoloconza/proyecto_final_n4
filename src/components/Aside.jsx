@@ -7,7 +7,6 @@ export default function Aside() {
     <div>
         <aside className="bg-gray-800 relative h-screen w-72 md:w-64 hidden sm:block shadow-xl">
             <div className="p-3 flex items-center">
-                {/* <img className="h-8 w-8 rounded-full" src="/assets/logo.jpg" alt=""> */}
                 <FontAwesomeIcon icon={faUserGear} className="h-8 w-8 rounded-full text-white"/>
                 <p className="text-white text-2xl font-semibold ml-3 mb-2">Administración</p>
             </div>
