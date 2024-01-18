@@ -10,6 +10,7 @@ export default function Register() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [rol_id, setRol_id] = useState(1);
     const [error, setError] = useState('');
 
 
@@ -23,7 +24,7 @@ export default function Register() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ name, email, password }),
+                body: JSON.stringify({ name, email, password, rol_id }),
             });
 
             if (response.ok) {
@@ -81,6 +82,22 @@ export default function Register() {
                                 onChange={(e) => setPassword(e.target.value)}
                                 placeholder='Password'
                                 className='w-full px-9 py-[4px] text-[14px] border border-gray-300 rounded-md'
+                            />
+                        </div>
+                        <div>
+                            {/* <FontAwesomeIcon icon={faLock} className='absolute ml-2.5 mt-2 text-[#828282]' /> */}
+                            {/* <input
+                                type='number'
+                                name='rol'
+                                value={rol_id}
+                                onChange={(e) => setRol_id(e.target.value)}
+                                placeholder='rol'
+                                className='w-full px-9 py-[4px] text-[14px] border border-gray-300 rounded-md'
+                            /> */}
+                            <input
+                                type='hidden'
+                                name='rol_id'
+                                value={rol_id}
                             />
                         </div>
                         <button className='bg-blue-500 text-white border-none rounded-md px-7 py-[5px] cursor-pointer w-full text-xs mt-2 mb-4' type="submit">Start coding now</button>

@@ -4,9 +4,11 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import NotFound from './pages/NotFound'
 import Perfil from './pages/Perfil'
-// import Navbar from './components/Navbar'
 import Dashboard from './pages/Dashboard'
-// import Aside from './components/Aside'
+import Roles from './pages/Roles'
+import Bitacora from './pages/Bitacora'
+import Usuarios from './pages/Usuarios'
+import Paginas from './pages/Paginas'
 function App() {
 
   return (
@@ -17,6 +19,10 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/perfil" element={<Perfil />} />
           <Route path="/dashboard" element={<Dashboard/>} />
+          <Route path="/roles" element={<Roles/>} />
+          <Route path="/bitacora" element={<Bitacora/>} />
+          <Route path="/usuarios" element={<Usuarios/>} />
+          <Route path="/paginas" element={<Paginas/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
